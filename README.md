@@ -1,24 +1,43 @@
-## Résolution du jeu Taquin avec l'algorithme A* (avec interface graphique)
+###JEU DU TAQUIN
 
-## https://youtu.be/LAJ31ARusDo
+##Description du jeu
+Le but est de reconstituer un puzzle en déplaçant les pièces une à une jusqu'à ce que le puzzle soit reconstitué. 
+Ceci est l'image avant le shuffle, ainsi que celle à reconstituer:
+<code>
+    <ul>
+        <li>1 2 3</li>
+        <li>4 5 6</li>
+        <li>7 8 0</li>
+    </ul>
+</code>
 
-## C'est Quoi Taquin ?
+Une fois mélangé, le puzzle peut ressembler à ceci:
+<code>
+    <ul>
+        <li>7 4 1</li>
+        <li>2 0 8</li>
+        <li>3 5 6</li>
+    </ul>
+</code>
+<br>
+Nous avons créé une IA qui suit l'algorithme A* pour résoudre le puzzle, selon deux heuristiques:<br>
+<p style="text-decoration : underline">-Heuristique de Hamming :</p> 
+    <code>Le nombre de pièces mal placées</code>
+<br>
+<p style="text-decoration : underline">-Heuristique de Manhattan :</p> 
+    <code>La somme des distances de Manhattan entre les pièces et leur position cible</code>
+<br><br><br>
+Étant donné que l'heuristique de Manhattan va chercher directement le chemin le plus court, elle est plus efficace que l'heuristique de Hamming, qui elle, exécutera une recherche bien plus profonde.
 
-Le taquin est un jeu solitaire en forme de damier créé vers 1870 aux États-Unis. 
+##Récupération du projet
+Dans votre terminal, rendez-vous au répertoire souhaité, et tapez la commande suivante:
+```git clone https://github.com/maximeabade/Taquin_A_Star.git```
 
-Sa théorie mathématique a été publiée par l’American Journal of mathematics pure and applied2 en 1879. 
+##Comment jouer
+Vérifiez votre installation de Python3 avec la commande suivante:
+```python3 --version```<br>
+Rendez-vous dans le répertoire et lancez la résolution avec la commande suivante:
+```python3 Taquin_main.py```
 
-En 1891, son invention fut revendiquée par Sam Loyd, au moment où le jeu connaissait un engouement considérable, tant aux États-Unis qu’en Europe. Il est composé de 15 petits carreaux numérotés de 1 à 15 qui glissent dans un cadre prévu pour 16. 
-
-Il consiste à remettre dans l’ordre les carreaux à partir d’une configuration initiale quelconque
-
-![alt text](https://imgur.com/ioeosjT.png)
-
-## A* !!
-
-l'algorithme de recherche A* (qui se prononce A étoile, ou A star à l'anglaise) est un algorithme de recherche de chemin dans un graphe entre un nœud initial et un nœud final tous deux donnés. 
-
-En raison de sa simplicité il est souvent présenté comme exemple typique d'algorithme de planification, domaine de l'intelligence artificielle.
-
-![alt text](https://imgur.com/NBP4G6A.png)
-
+##Résultats
+On trouve le même nombre d'étapes pour résoudre le problème, mais on remarque de suite qu'effectivement, l'heuristique de Manhattan est plus efficace que l'heuristique de Hamming, car elle exécute moins de noeuds, et donc moins de calculs.
