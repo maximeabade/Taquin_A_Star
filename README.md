@@ -12,13 +12,13 @@ Ceci est l'image avant le shuffle, ainsi que celle à reconstituer:
 </code>
 
 Une fois mélangé, le puzzle peut ressembler à ceci:
-<code>
+```
     <ul>
         <li>7 4 1</li>
         <li>2 0 8</li>
         <li>3 5 6</li>
     </ul>
-</code>
+```
 <br>
 Nous avons créé une IA qui suit l'algorithme A* pour résoudre le puzzle, selon deux heuristiques:<br>
 <p style="text-decoration : underline">-Heuristique de Hamming :</p> 
