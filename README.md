@@ -26,14 +26,14 @@ Nous avons créé une IA qui suit l'algorithme A* pour résoudre le puzzle, selo
 Étant donné que l'heuristique de Manhattan va chercher directement le chemin le plus court, elle est plus efficace que l'heuristique de Hamming, qui elle, exécutera une recherche bien plus profonde.
 
 ## Récupération du projet
-Dans votre terminal, rendez-vous au répertoire souhaité, et tapez la commande suivante:
+Dans votre terminal, rendez-vous au répertoire souhaité, et tapez la commande suivante:<br>
 ```git clone https://github.com/maximeabade/Taquin_A_Star.git```
 
 ## Comment jouer
-Vérifiez votre installation de Python3 avec la commande suivante:
+Vérifiez votre installation de Python3 avec la commande suivante:<br>
 ```python3 --version```<br>
-Rendez-vous dans le répertoire et lancez la résolution avec la commande suivante:
+Rendez-vous dans le répertoire et lancez la résolution avec la commande suivante:<br>
 ```python3 Taquin_main.py```
 
-##Résultats
+## Résultats
 On trouve le même nombre d'étapes pour résoudre le problème, mais on remarque de suite qu'effectivement, l'heuristique de Manhattan est plus efficace que l'heuristique de Hamming, car elle exécute moins de noeuds, et donc moins de calculs.
