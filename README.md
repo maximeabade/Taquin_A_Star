@@ -1,4 +1,4 @@
-### JEU DU TAQUIN
+# JEU DU TAQUIN
 
 ## Description du jeu
 Le but est de reconstituer un puzzle en déplaçant les pièces une à une jusqu'à ce que le puzzle soit reconstitué. 
