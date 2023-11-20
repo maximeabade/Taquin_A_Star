@@ -13,9 +13,9 @@ Ceci est l'image avant le shuffle, ainsi que celle à reconstituer:
 
 Une fois mélangé, le puzzle peut ressembler à ceci:
 <code>
-        <li>7 4 1</li>
-        <li>2 0 8</li>
-        <li>3 5 6</li>
+        [7 4 1]
+        [2 0 8]
+        [3 5 6]
 </code>
 <br>
 Nous avons créé une IA qui suit l'algorithme A* pour résoudre le puzzle, selon deux heuristiques:<br>
