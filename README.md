@@ -4,11 +4,9 @@
 Le but est de reconstituer un puzzle en déplaçant les pièces une à une jusqu'à ce que le puzzle soit reconstitué. 
 Ceci est l'image avant le shuffle, ainsi que celle à reconstituer:
 <code>
-
         [1 2 3]
         [4 5 6]
         [7 8 0]
-
 </code>
 
 Une fois mélangé, le puzzle peut ressembler à ceci:
